@@ -1,0 +1,85 @@
+html,
+
+body {
+    height: 100%;
+    width: 100%;
+background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+background-size: cover;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.board {
+    height: 63%;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-right: auto;
+    margin-left: 20%;
+}
+.h2{
+    color: cyan;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.cell {
+    background-color: rgb(22, 59, 246);
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    user-select: none;
+    padding: 19px;
+    margin: 5px 11px 11px 9px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.cell:nth-child(3n) {
+    border-right: none;
+    
+}
+
+.cell:nth-child(n+7) {
+    border-bottom: none;
+   
+}
+
+.cell.highlight {
+    background-color: #f7b32c;
+    
+}
+
+.control {
+    width: 50%;
+    margin-left: 20%;
+    margin-right: auto;
+
+
+}
+
+.button {
+
+    background-color: #6926cd;
+ 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+
+}
+
+.gameStatement{
+    margin-top: auto;
+}
